@@ -1,10 +1,8 @@
 package io.github.messiaslima.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import io.github.messiaslima.R
-import io.github.messiaslima.repository.AuthorizationRepository
-import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
 
