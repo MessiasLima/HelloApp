@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">HelloApp</string>
-    <string name="login">Sign in now</string>
+    <string name="sign_in_now">Sign in now</string>
     <string name="home">Home</string>
     <string name="sign_in">Sign in</string>
+    <string name="login">Login</string>
+    <string name="login_greeting">Hello there! Sign in and start managing your PurpleRocket account</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
 </resources>
