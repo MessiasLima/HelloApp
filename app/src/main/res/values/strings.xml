@@ -7,4 +7,5 @@
     <string name="login_greeting">Hello there! Sign in and start managing your PurpleRocket account</string>
     <string name="password">Password</string>
     <string name="forgot_password">Forgot password?</string>
+    <string name="forgot_message">The login and password must be equals</string>
 </resources>
