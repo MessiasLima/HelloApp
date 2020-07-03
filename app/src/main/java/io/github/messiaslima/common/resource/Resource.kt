@@ -1,6 +1,6 @@
 package io.github.messiaslima.common.resource
 
-data class Resource<out T>(
+class Resource<out T> private constructor(
     val status: Status,
     val data: T? = null,
     val message: String? = null,
