@@ -7,4 +7,5 @@
     <color name="backgroundGradientStartColor">#1a2457</color>
     <color name="backgroundGradientEndColor">#2f1a57</color>
     <color name="backgroundGradientEndColorLighter">#43257E</color>
+    <color name="red">#f00</color>
 </resources>
