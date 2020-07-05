@@ -17,7 +17,7 @@ class AuthorizationRepositoryImpl : AuthorizationRepository {
         return resource
     }
 
-    private fun validateCredentials(login: String, password: String): Resource<Boolean> {
+    fun validateCredentials(login: String, password: String): Resource<Boolean> {
         Thread.sleep(2000) // Simulate network call
 
         if (login == LOGIN_ERROR) {
