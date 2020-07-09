@@ -38,12 +38,24 @@
             app:layout_constraintTop_toBottomOf="@id/homeGreetingTextView" />
 
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/homeIpTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@{ viewModel.location.ipAddress }"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/homeServiceProviderTextView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/homeSignOutButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/sign_out"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/homeIpTextView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

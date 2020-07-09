@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import io.github.messiaslima.databinding.HomeFragmentBinding
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -25,5 +26,12 @@ class HomeFragment : Fragment() {
         binding.lifecycleOwner = viewLifecycleOwner
         viewModel.username = navigationArgs.username
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.homeSignOutButton.setOnClickListener {
+            findNavController().navigateUp()
+        }
     }
 }

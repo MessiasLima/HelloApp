@@ -10,7 +10,7 @@ import retrofit2.Response
 
 class LocationDataSource(private val locationAPI: LocationAPI) {
     fun getLocation(): LiveData<Resource<Location>> {
-        val resource = MutableLiveData<Resource<Location>>();
+        val resource = MutableLiveData<Resource<Location>>()
         locationAPI.getLocation().enqueue(object : Callback<Location> {
             override fun onFailure(call: Call<Location>, t: Throwable) {
                 resource.value = Resource.error(throwable = t)

@@ -11,4 +11,5 @@
     <string name="error_login">Occurred an error when trying to sign in</string>
     <string name="error_generic">Occurred an unexpected error</string>
     <string name="wrong_credentials">Wrong credentials. Please verify your login or password</string>
+    <string name="sign_out">Sign out</string>
 </resources>
