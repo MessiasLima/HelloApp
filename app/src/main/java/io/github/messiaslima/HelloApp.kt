@@ -1,6 +1,7 @@
 package io.github.messiaslima
 
 import android.app.Application
+import io.github.messiaslima.datasource.greeting.greetingDataSourceModule
 import io.github.messiaslima.datasource.location.locationDataSourceModule
 import io.github.messiaslima.ui.home.homeModule
 import io.github.messiaslima.ui.login.loginModule
@@ -16,6 +17,7 @@ class HelloApp : Application() {
             androidContext(this@HelloApp)
             modules(
                 locationDataSourceModule,
+                greetingDataSourceModule,
                 loginModule,
                 homeModule
             )

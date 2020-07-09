@@ -46,7 +46,8 @@ class LoginFragment : Fragment() {
                 if (it) {
                     navigateToHome()
                 } else {
-                    binding.signInPassTextInputLayout.helperText = getString(R.string.wrong_credentials)
+                    binding.signInPassTextInputLayout.helperText =
+                        getString(R.string.wrong_credentials)
                 }
             }
         )
@@ -82,7 +83,9 @@ class LoginFragment : Fragment() {
     }
 
     private fun navigateToHome() {
-        val direction = LoginFragmentDirections.login()
+        val direction = LoginFragmentDirections.login(
+            binding.signInLoginEditText.editableText.toString()
+        )
         findNavController().navigate(direction)
     }
 }
