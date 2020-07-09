@@ -1,11 +1,11 @@
 package io.github.messiaslima.ui.login
 
-import io.github.messiaslima.repository.AuthorizationRepository
-import io.github.messiaslima.repository.AuthorizationRepositoryImpl
+import io.github.messiaslima.repository.authorization.AuthorizationRepository
+import io.github.messiaslima.repository.authorization.AuthorizationRepositoryImpl
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val loginModule = module {
-    single<AuthorizationRepository> { AuthorizationRepositoryImpl() }
+    factory<AuthorizationRepository> { AuthorizationRepositoryImpl() }
     viewModel { LoginViewModel(get()) }
 }

@@ -1,6 +1,7 @@
 package io.github.messiaslima
 
 import android.app.Application
+import io.github.messiaslima.datasource.location.locationDataSourceModule
 import io.github.messiaslima.ui.home.homeModule
 import io.github.messiaslima.ui.login.loginModule
 import org.koin.android.ext.koin.androidContext
@@ -13,7 +14,11 @@ class HelloApp : Application() {
         startKoin {
             androidLogger()
             androidContext(this@HelloApp)
-            modules(loginModule, homeModule)
+            modules(
+                locationDataSourceModule,
+                loginModule,
+                homeModule
+            )
         }
     }
 }

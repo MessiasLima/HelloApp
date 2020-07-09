@@ -1,4 +1,4 @@
-package io.github.messiaslima.repository
+package io.github.messiaslima.repository.authorization
 
 import androidx.lifecycle.LiveData
 import io.github.messiaslima.common.resource.Resource

@@ -1,4 +1,4 @@
-package io.github.messiaslima.repository
+package io.github.messiaslima.repository.authorization
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -6,7 +6,8 @@ import io.github.messiaslima.common.resource.Resource
 import io.github.messiaslima.common.runOnBackground
 import io.github.messiaslima.exception.LoginException
 
-class AuthorizationRepositoryImpl : AuthorizationRepository {
+class AuthorizationRepositoryImpl :
+    AuthorizationRepository {
     override fun signIn(login: String, password: String): LiveData<Resource<Boolean>> {
         val resource = MutableLiveData<Resource<Boolean>>()
         resource.value = Resource.loading()

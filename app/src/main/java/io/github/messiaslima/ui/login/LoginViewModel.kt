@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.map
 import androidx.lifecycle.switchMap
 import io.github.messiaslima.common.event.Event
-import io.github.messiaslima.repository.AuthorizationRepository
+import io.github.messiaslima.repository.authorization.AuthorizationRepository
 import io.github.messiaslima.ui.login.dto.SignInDTO
 
 class LoginViewModel(

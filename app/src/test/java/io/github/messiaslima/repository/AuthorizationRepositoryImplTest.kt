@@ -1,6 +1,7 @@
 package io.github.messiaslima.repository
 
 import io.github.messiaslima.exception.LoginException
+import io.github.messiaslima.repository.authorization.AuthorizationRepositoryImpl
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.BeforeEach
@@ -12,7 +13,8 @@ class AuthorizationRepositoryImplTest {
 
     @BeforeEach
     fun setup() {
-        authorizationRepository = AuthorizationRepositoryImpl()
+        authorizationRepository =
+            AuthorizationRepositoryImpl()
     }
 
     @Test
