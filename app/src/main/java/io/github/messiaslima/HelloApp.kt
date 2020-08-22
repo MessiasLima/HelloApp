@@ -15,12 +15,12 @@ class HelloApp : Application() {
         startKoin {
             androidLogger()
             androidContext(this@HelloApp)
-            modules(
+            koin.loadModules(listOf(
                 locationDataSourceModule,
                 greetingDataSourceModule,
                 loginModule,
                 homeModule
-            )
+            ))
         }
     }
 }
